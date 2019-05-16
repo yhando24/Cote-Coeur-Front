@@ -7,12 +7,20 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.route';
 import { LoginComponent } from './login/login.component';
 import { ListeOperationComponent } from './liste-operation/liste-operation.component';
+import { SuperadminComponent } from './superadmin/superadmin.component';
+import { ConsultantComponent } from './consultant/consultant.component';
+import { ResponsableComponent } from './responsable/responsable.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListeOperationComponent,
-    LoginComponent
+    LoginComponent,
+    SuperadminComponent,
+    ConsultantComponent,
+    ResponsableComponent,
+    HeaderComponent
   ],
 
   imports: [
