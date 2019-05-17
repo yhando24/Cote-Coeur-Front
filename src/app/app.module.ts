@@ -11,6 +11,8 @@ import { SuperadminComponent } from './superadmin/superadmin.component';
 import { ConsultantComponent } from './consultant/consultant.component';
 import { ResponsableComponent } from './responsable/responsable.component';
 import { HeaderComponent } from './header/header.component';
+import { RoleComponent } from './role/role.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HeaderComponent } from './header/header.component';
     SuperadminComponent,
     ConsultantComponent,
     ResponsableComponent,
-    HeaderComponent
+    HeaderComponent,
+    RoleComponent,
+    UserComponent
   ],
 
   imports: [
