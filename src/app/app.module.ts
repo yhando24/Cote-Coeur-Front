@@ -10,12 +10,19 @@ import { ListeOperationComponent } from './liste-operation/liste-operation.compo
 import { AccueilComponent } from './accueil/accueil.component';
 import { FormsModule } from '@angular/forms';
 
+import { HeaderComponent } from './header/header.component';
+import { RoleComponent } from './role/role.component';
+import { UserComponent } from './user/user.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     ListeOperationComponent,
     LoginComponent,
-    AccueilComponent
+    AccueilComponent,
+    HeaderComponent,
+    RoleComponent,
+    UserComponent
   ],
 
   imports: [

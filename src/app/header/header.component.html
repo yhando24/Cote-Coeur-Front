@@ -1,0 +1,35 @@
+<nav class="fond-nav-barre navbar navbar-expand-lg navbar-light navbar-GDM" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <img id="logo-gdm-login" src="../../assets/resources/pc.jpg" alt="logo-gdm">
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item hvr-underline-from-center">
+          <a class="nav-link" [routerLink]="['/users']" routerLinkActive="router-link-active">Utilisateurs</a>
+        </li>
+        <li class="nav-item hvr-underline-from-center">
+          <a class="nav-link" [routerLink]="['/liste-operation']" routerLinkActive="router-link-active">Opérations</a>
+        </li>
+        
+   
+
+        
+      
+
+
+      </ul>
+      <div *ngIf="user">
+        <h4 class="bjr-user">Bonjour {{user.firstName}} !</h4>
+      </div>
+      <a *ngIf="" lass="nav-link" routerLink="/login"><button
+          class="btn btn-deconnecter hvr-wobble-vertical">Login</button></a>
+      <a *ngIf="" class="nav-link"><button class=" hvr-wobble-vertical btn btn-deconnecter"
+          (click)="bye()">Déconnecter</button></a>
+    </div>
+
+
+
+  </nav>
