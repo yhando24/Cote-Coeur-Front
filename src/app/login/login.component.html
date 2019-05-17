@@ -8,18 +8,18 @@
           <img id="logo-gdm-login" src="../../assets/resources/pc.jpg" alt="logo-gdm">
         </div>
   
-        <form (ngSubmit)="login()" >
+        <form (ngSubmit)="login()" #monForm="ngForm" >
           <div class="form-group">
             <div class="form-label-group">
               <label for="inputEmail">Email</label>
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required"
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required" [(ngModel)]="user.email" #email="ngModel"
                 autofocus="autofocus" name="email" >
             </div>
           </div>
           <div class="form-group" style="margin-top:10px;">
             <div class="form-label-group">
               <label for="inputPassword">Mot de passe</label>
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required"
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required" [(ngModel)]="user.password" #password="ngModel"
                 name="password">
   
             </div>

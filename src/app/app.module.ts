@@ -7,18 +7,22 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.route';
 import { LoginComponent } from './login/login.component';
 import { ListeOperationComponent } from './liste-operation/liste-operation.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListeOperationComponent,
-    LoginComponent
+    LoginComponent,
+    AccueilComponent
   ],
 
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES),
     NgbModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
